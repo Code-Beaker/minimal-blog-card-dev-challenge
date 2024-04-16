@@ -1,0 +1,92 @@
+@import "./fonts.css";
+
+:root {
+  --purple: #883ae1;
+  --pale-purple: #e6d6fc;
+  --very-pale-purple: #e5eaf0;
+  --pale-white: #fafaf9;
+  --white: #ffffff;
+  --very-dark-grey: #20293a;
+  --dark-grey: #6c727f;
+
+  --weight-regular: 400;
+  --weight-medium: 500;
+  --weight-semibold: 600;
+  --weight-bold: 700;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Sora", system-ui, sans-serif;
+}
+
+img {
+  max-width: 100%;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 23rem;
+  height: auto;
+  border-radius: 1rem;
+  box-shadow: 0px 6px 6px 3px rgba(17, 23, 41, 0.125);
+  padding: 1rem;
+}
+
+.image-wrapper img {
+  border-radius: 0.5rem;
+}
+
+.category {
+  display: inline-block;
+  margin: 1rem 0;
+  font-size: 0.625rem;
+  font-weight: var(--weight-semibold);
+  padding: 0.35rem 1.5em;
+  color: var(--purple);
+  background: var(--pale-purple);
+  border-radius: 2rem;
+}
+
+.heading {
+  font-size: 1.125rem;
+  color: var(--very-dark-grey);
+  margin-bottom: 0.5rem;
+}
+
+.paragraph {
+  font-size: 0.875rem;
+  font-weight: var(--weight-regular);
+  color: var(--dark-grey);
+  margin-bottom: 1rem;
+}
+
+.name {
+  /* border-top: 1px solid var(--dark-grey); */
+  padding-top: 1rem;
+  width: 100%;
+  color: var(--dark-grey);
+  font-size: 0.75rem;
+  position: relative;
+}
+
+.name::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: var(--pale-purple);
+}
